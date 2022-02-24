@@ -69,7 +69,7 @@ Usage: node pets.js read INDEX
 $ node pets.js read -1
 Usage: node pets.js read INDEX
 ```
-
+console
 Finally, your application must also handle the `create` subcommand. Only when given an `age`, `kind`, and `name` will it create a record in the database. Remember to convert the `age` into an integer. For example:
 
 ```shell
@@ -89,7 +89,7 @@ $ node pets.js read 2
 { age: 3, kind: 'parakeet', name: 'Cornflake' }
 ```
 
-If the `pets.json` file ever becomes corrupted, you can reset it with the `git checkout` command.
+If the `pets.json` file ever beces corrupted, you can reset it with the `git checkout` command.
 
 ```shell
 $ git checkout -- pets.json
