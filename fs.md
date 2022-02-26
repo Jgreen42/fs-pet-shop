@@ -2,7 +2,7 @@
 
 ![pet-shop](https://i.imgur.com/9tvF4Lx.jpg)
 
-A local pet shop keeps a database for all the pets they have in stock. However, they need you to build a command-line application in Node to handle a variety of subcommands and log the results to the console.
+A local pet shop keeps a database for all the pets they have in stock. However, they need you to build a command-line nodeapplication in Node to handle a variety of subcommands and log the results to the console.
 
 The subcommands will be in the form of create, read, update, and destroy (CRUD). These subcommands will manage their database, which is a JSON-formatted `pets.json` file. Once the subcommand is correctly handled, the app will need to log an appropriate result to the console. Details of the subcommands the app will need to handle and their output can be found below.
 
@@ -114,7 +114,6 @@ Usage: node pets.js update INDEX AGE KIND NAME
 
 $ node pets.js update 1 9
 Usage: node pets.js update INDEX AGE KIND NAME
-
 $ node pets.js update 1 9 cat
 Usage: node pets.js update INDEX AGE KIND NAME
 
