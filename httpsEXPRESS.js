@@ -52,4 +52,32 @@
 //When sending the audio file for example or some form of data is to send the type 
 //of file that you are using so the user or client knows how to interpret the type of 
 //files 
-//they are accessing ect/ type of common file is (text/plain) 
+//they are accessing ect/ type of commo
+
+
+
+
+const express = require ( 'express' );
+const app = express ();
+
+const { Pool } = require ('pg')
+
+const pool = new Pool ({
+    // user: 'postgres',
+    // host: 'postgres://localhost/pg', // "\conninfo" in psql repl for verification
+    database: 'petshop', 
+})
+
+
+app.get('/', (freq,res)=> {
+    pool.query('SELECT * FROM pets', (err, data)=> {
+console.log(err)
+        res.json(data.rows);
+    })
+})
+
+app.listen(3000, ()=> {
+    console.log('listening on port 3000');
+})
+const port = 3000;
+

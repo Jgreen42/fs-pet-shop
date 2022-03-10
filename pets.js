@@ -10,8 +10,7 @@ switch (subcommand) {
         const index = Number(process.argv[3]);
         fs.readFile("./pets.json", "utf8", (err, data) => {
             if (err) throw err;
-
-            // shell
+ 
             const parsedData = JSON.parse(data);
             const index = Number(process.argv[3]);
             if (process.argv[3] === undefined) {
@@ -46,10 +45,10 @@ switch (subcommand) {
     case "update":
         console.log("updating file");
         console.log("updating");
-        const age = Number(process.argv[3])
-        const kind = process.argv[4]
-        const name = process.argv[5]
-        const newPet = {age, name, kind}
+         age = Number(process.argv[3])
+         kind = process.argv[1]
+         name = process.argv[5]
+         newPet = {age, name, kind}
         console.log(newPet); 
         fs.readFile("./pets.json", "utf8", (err, data) => {
             const pets = JSON.parse(data);

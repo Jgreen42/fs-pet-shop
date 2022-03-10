@@ -48,9 +48,9 @@ Your next task is to refactor the application to handle the `read` subcommand vi
 $ node pets.js read
 [ { age: 7, kind: 'rainbow', name: 'fido' },
   { age: 5, kind: 'snake', name: 'Buttons' } ]
-```
+```q
 
-Additionally, your application must handle the `read` subcommand when given an index. In this case, it must read the `pets.json` file, parse its data to a native JavaScript object, access the correct record, and log it to the console. If the call to the filesystem fails for any reason, it should throw the resulting error.
+Additionally, your application must handle the `read` subcommand when given an index. In this case, it must read the `pets.json` file, parse its data to a na```tive JavaScript object, access the correct record, and log it to the console. If the call to the filesystem fails for any reason, it should throw the resulting error.
 
 ```shell
 $ node pets.js read 0
@@ -111,7 +111,7 @@ Usage: node pets.js update INDEX AGE KIND NAME
 
 $ node pets.js update 1
 Usage: node pets.js update INDEX AGE KIND NAME
-
+n
 $ node pets.js update 1 9
 Usage: node pets.js update INDEX AGE KIND NAME
 $ node pets.js update 1 9 cat
